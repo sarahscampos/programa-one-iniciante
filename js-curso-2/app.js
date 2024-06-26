@@ -8,7 +8,7 @@ exibirMensagemInicial();
 function exibirTexto(seletor, texto) {
   let campo = document.querySelector(seletor);
   campo.innerText = texto;
-  
+  responsiveVoice.speak(texto, 'Brazilian Portuguese Female', {rate:1.2});
 }
 
 function exibirMensagemInicial() {
